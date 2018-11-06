@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Max & Min</title>
+</head>
+<body>
+<script>
+    const arr = [56,11,2,8,16,7,59,9,41];
+    var arr2 = [];
+    var arr3 = [];
+    var arr4 = [];
+    var arr5 = [];
+
+    function one() {
+        for (var i=0; i < arr.length; i++){
+            if (arr[i] > arr[i+1]){
+                arr2.push(arr[i])
+            }
+            else if (arr[i]>arr[i -1]){
+                arr2.push(arr[i])
+            }
+        }
+        console.log(arr2)
+    }
+
+    function two() {
+        for (var j=0; j<arr2.length; j++){
+            if (arr2[j]> arr2[j+1]){
+                arr3.push(arr2[j])
+            }
+            else if (arr2[j]>arr2[j -1]){
+                arr3.push(arr2[j])
+            }
+        }
+        console.log(arr3)
+    }
+
+    function three() {
+        for (var l=0; l<arr3.length; l++){
+            if (arr3[l]> arr3[l+1]){
+                arr4.push(arr3[l])
+            }
+            else if (arr3[l]>arr3[l -1]){
+                arr4.push(arr3[l])
+            }
+        }
+        console.log(arr4)
+    }
+
+    function four() {
+        for (var l=0; l<arr4.length; l++){
+            if (arr4[l]> arr4[l+1]){
+                arr5.push(arr4[l])
+            }
+            else if (arr4[l]>arr4[l -1]){
+                arr5.push(arr4[l])
+            }
+        }
+        console.log(arr5);
+
+        if (arr5[0]>arr5[1]){
+            console.log(arr5[0])
+        }
+        else {
+            console.log(arr5[1])
+        }
+    }
+
+    one();
+    two();
+    three();
+    four();
+</script>
+</body>
+</html>
